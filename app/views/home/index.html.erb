@@ -1,0 +1,8 @@
+<form accept-charset="UTF-8" action="<%=search_path%>" method="get">
+  <select name="query">
+    <% house.houses.each do |house| %>
+    <option value="<%=house[1]%>"><%=house[0]%></option>
+    <% end %>
+  </select>
+  <input type="submit" value="Get Members" class="myButton">
+</form>
