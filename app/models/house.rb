@@ -1,8 +1,8 @@
 class House
 
-attr_reader :houses
+attr_reader :houses, :name, :id
 
-  def initialize
+  def initialize(data = "")
     @houses = [
       ['Stark', 'stark'],
       ['Lannister', 'lannister'],
@@ -10,6 +10,8 @@ attr_reader :houses
       ['Tyrell', 'tyrell'],
       ['Greyjoy', 'greyjoy']
     ]
+    @name = data["name"]
+    @id = data["id"]
   end
 
 end
